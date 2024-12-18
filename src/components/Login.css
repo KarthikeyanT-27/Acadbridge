@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.fullportal {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.portal button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.portal button:hover {
+    background: #0056b3;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login form label {
+    margin-bottom: 5px;
+}
+
+.login form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loginbutton,
+.registerbutton,
+.reset {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.loginbutton:hover,
+.registerbutton:hover,
+.reset:hover {
+    background: #0056b3;
+}
+
+.forgot-password {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forgot-password form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot-password form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password form button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.forgot-password form button:hover {
+    background: #218838;
+}
+
+
+
+@media (max-width: 480px) {
+    .fullportal {
+        padding: 10px;
+    }
+
+    .login form {
+        max-width: 300px;
+    }
+
+    .forgot-password form input,
+    .forgot-password form button {
+        width: 100%;
+    }
+}
